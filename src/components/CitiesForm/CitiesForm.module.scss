@@ -1,0 +1,35 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    &__header {
+        color: black;
+        font-weight: 800;
+        font-size: 46px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: black;
+        &__button {
+            padding: 10px;
+            color: white !important;
+            background: black !important;
+            border: none;
+            height: 35px;
+            background: none;
+            color: inherit;
+            cursor: pointer;
+            outline: inherit;
+        }
+    }
+}

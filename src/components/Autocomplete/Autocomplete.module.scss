@@ -1,0 +1,45 @@
+.container {
+    position: relative;
+    &__input {
+        padding: 10px;
+        border-width: 1px;
+        border-style: inset;
+        border-color: black;
+        border-image: initial;
+        width: 94%;
+    }
+    &__input:focus-visible {
+        padding: 10px;
+        border-width: 1px;
+        border-style: inset;
+        border-color: black;
+        border-image: initial;
+        outline: none;
+    }
+    &__options {
+        z-index: 100;
+        position: absolute;
+        background-color: white;
+        max-height: 300px;
+        overflow: auto;
+        width: 161px;
+        margin: 8px 0 0 0;
+        padding: 0;
+        border: 1px solid #DBDBE3;
+        border-radius: 2px 2px 0px 0px;
+        
+        li {
+            list-style-type: none; 
+            padding: 10px;
+            text-align: left;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.05em;
+        }
+        :not(:last-child) {
+            border-bottom: 1px solid #DBDBE3;
+            border-radius: 2px 2px 0px 0px;
+        }
+    }
+}
