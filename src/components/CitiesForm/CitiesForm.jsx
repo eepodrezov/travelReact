@@ -35,8 +35,8 @@ export const CitiesForm = () => {
             <Select options={tarifs} placeholder="Тариф" value={tarif} onChange={setTrif}/>
             <button className={styles.container__form__button} onClick={() => setupRoad()}>Рассчитать</button>
             <div className={styles.container__result}>Стоимость поездки выйдет: ~{finalResult.price} рублей</div>
-            <div className={styles.container__result}>Примерное растояние: {finalResult.range} рублей</div>
-            <div className={styles.container__result}>Время в пути: ~{finalResult.time} рублей</div>
+            <div className={styles.container__result}>Примерное растояние: {finalResult.range} км</div>
+            <div className={styles.container__result}>Время в пути: ~{finalResult.time}</div>
         </div>
     </div>
   )
