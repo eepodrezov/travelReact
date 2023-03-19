@@ -1,20 +1,27 @@
 .container {
     position: relative;
-    &__input {
-        padding: 10px;
+    &__input{
+        margin: 0;
+        padding: 0;
+        display: flex;
         border-width: 1px;
         border-style: inset;
         border-color: black;
         border-image: initial;
-        width: 94%;
-    }
-    &__input:focus-visible {
-        padding: 10px;
-        border-width: 1px;
-        border-style: inset;
-        border-color: black;
-        border-image: initial;
-        outline: none;
+        &__field {
+            border: none;
+            width: 96%;
+            padding: 10px;
+            outline: none;
+        }
+
+        &__button {
+            cursor: pointer;
+            background-color: white;
+            border: none;
+            outline: none;
+            padding: 0 10px 0 0;
+        }
     }
     &__options {
         z-index: 100;
@@ -42,4 +49,9 @@
             border-radius: 2px 2px 0px 0px;
         }
     }
+}
+
+.open {
+    transform: rotate(180deg);
+    padding: 0 0 0 10px;
 }

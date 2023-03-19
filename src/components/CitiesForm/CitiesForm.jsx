@@ -6,8 +6,8 @@ import { Select } from '../Select'
 import { tarifs, cities } from '../../data'
 
 export const CitiesForm = () => {
-    const [ cityA, setCityA ] = useState(null)
-    const [ cityB, setCityB ] = useState(null)
+    const [ cityA, setCityA ] = useState('')
+    const [ cityB, setCityB ] = useState('')
     const [ tarif, setTrif ] = useState(null)
     const [finalResult, setFinalResult] = useState({ 
         price: 0,
@@ -28,15 +28,15 @@ export const CitiesForm = () => {
 
   return (
     <div className={styles.container}>
-        <div className={styles.container__header}>Расчитайте стоимость поездки</div>
+        <div className={styles.container__header}>Расчитайте стоимости грузоперевозок</div>
         <div className={styles.container__form}>
             <Autocomplete onChange={setCityA} value={cityA} placeholder='Откуда?' options={cities}/>
             <Autocomplete onChange={setCityB} value={cityB} placeholder='Куда?' options={cities}/>
             <Select options={tarifs} placeholder="Тариф" value={tarif} onChange={setTrif}/>
-            <div className={styles.container__result}>Стоимость поездки выйдет: ~{finalResult.price} рублей</div>
-            <div className={styles.container__result}>Примерное растояние: {finalResult.range} км.</div>
-            <div className={styles.container__result}>Время в пути: ~{finalResult.time}</div>
             <button className={styles.container__form__button} onClick={() => setupRoad()}>Рассчитать</button>
+            <div className={styles.container__result}>Стоимость поездки выйдет: ~{finalResult.price} рублей</div>
+            <div className={styles.container__result}>Примерное растояние: {finalResult.range} рублей</div>
+            <div className={styles.container__result}>Время в пути: ~{finalResult.time} рублей</div>
         </div>
     </div>
   )

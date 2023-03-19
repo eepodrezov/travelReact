@@ -1,6 +1,10 @@
 .container {
     position: relative;
     &__input {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 10px;
         border-width: 1px;
         border-style: inset;
@@ -9,6 +13,9 @@
         background-color: white;
         width: 100%;
         text-align: left;
+    }
+    &__icon {
+
     }
     &__placeholder {
         color: grey;
@@ -21,6 +28,7 @@
         border-image: initial;
         outline: none;
     }
+
     &__options {
         position: absolute;
         background: white;
@@ -44,4 +52,8 @@
             border-radius: 2px 2px 0px 0px;
         }
     }
+}
+
+.open {
+    transform: rotate(180deg);
 }
