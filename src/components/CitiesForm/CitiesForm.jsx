@@ -28,7 +28,7 @@ export const CitiesForm = () => {
 
   return (
     <div className={styles.container}>
-        <div className={styles.container__header}>Расчитайте стоимости грузоперевозок</div>
+        <div className={styles.container__header}>Расчитайте стоимости поездки</div>
         <div className={styles.container__form}>
             <Autocomplete onChange={setCityA} value={cityA} placeholder='Откуда?' options={cities}/>
             <Autocomplete onChange={setCityB} value={cityB} placeholder='Куда?' options={cities}/>
