@@ -45,3 +45,12 @@
         max-width: 80%;
     }
 }
+
+@media (max-width: 860px) {
+    h1 {
+        font-size: 32px !important;
+    }
+    .container {
+        gap: 40px;
+    }
+  }
