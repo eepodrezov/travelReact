@@ -37,6 +37,7 @@ export const CitiesForm = () => {
             <div className={styles.container__result}>Стоимость поездки выйдет: ~{finalResult.price} рублей</div>
             <div className={styles.container__result}>Примерное растояние: {finalResult.range} км</div>
             <div className={styles.container__result}>Время в пути: ~{finalResult.time}</div>
+            <div className={styles.container__anotation}>*здесь указана примерная стоимость поездки. Для того, чтобы узнать точную цену, нажмите на кнопку ниже.</div>
         </div>
     </div>
   )

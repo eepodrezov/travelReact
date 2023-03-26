@@ -18,9 +18,12 @@
     &__form {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 10px;
         color: black;
         &__button {
+            width: 300px;
             padding: 10px;
             color: white !important;
             background: black !important;
@@ -31,5 +34,14 @@
             cursor: pointer;
             outline: inherit;
         }
+    }
+    &__anotation {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 50px;
+        color: grey;
+        font-size: 15px;
+        max-width: 80%;
     }
 }
