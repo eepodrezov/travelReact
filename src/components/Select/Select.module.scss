@@ -1,6 +1,7 @@
 .container {
     position: relative;
-    width: 300px;
+    width: 70%;
+    max-width: 500px;
     &__input {
         cursor: pointer;
         display: flex;

@@ -1,19 +1,21 @@
 .container {
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
     background-color: white;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 40px;
     justify-content: center;
     flex-direction: column;
     font-size: calc(10px + 2vmin);
     color: black;
     &__header {
         color: black;
-        font-weight: 800;
-        font-size: 46px;
+        font-family: 'Montserrat',Arial,sans-serif;
+        font-weight: 600;
+        font-size: 42px;
+        width: 70%;
     }
     &__form {
         display: flex;
@@ -23,7 +25,9 @@
         gap: 10px;
         color: black;
         &__button {
-            width: 300px;
+            margin: 10px 0;
+            width: 70%;
+            max-width: 500px;
             padding: 10px;
             color: white !important;
             background: black !important;
@@ -36,7 +40,7 @@
         }
     }
     &__anotation {
-        width: 100%;
+        width: 70%;
         display: flex;
         justify-content: center;
         padding: 0 50px;
@@ -51,6 +55,12 @@
         font-size: 32px !important;
     }
     .container {
-        gap: 40px;
+        gap: 10px;
+        &__header {
+            font-size: 38px;
+        }
+        &__form {
+            gap: 5px;
+        }
     }
   }
